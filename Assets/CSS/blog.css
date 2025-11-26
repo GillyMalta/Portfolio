@@ -1,0 +1,36 @@
+:root {
+    --std-Body_Background_Colour_C2E2EE: #C2E2EE;
+    --std-Body_Background_Colour_Royalblue: royalblue;
+    --std_Font_Colour_C2E2EE: #C2E2EE;
+    --std_Border_Radius_05rem: 0.5rem;
+    --std_Margin_05rem: 0.5rem;
+    --std_Padding_05rem: 0.5rem;
+    
+}
+
+body,
+#table_Container {
+    background-color: var(--std-Body_Background_Colour_Royalblue);
+    color: var(--std_Font_Colour_C2E2EE);
+}
+
+#table_Container {
+    border-radius: var(--std_Border_Radius_05rem);
+    margin: 1rem 0.5rem 0 0.5rem;
+    padding: var(--std_Padding_05rem);
+    border: solid white 1px
+}
+
+.tables {
+    border: white;
+    width: 100%;
+    /* border-radius: var(--std_Border_Radius_05rem); */
+}
+
+.date {
+    text-align: center;
+}
+
+pre {
+    text-align: left;
+}
