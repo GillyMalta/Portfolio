@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --main_Font: 'Khand';
+    --body_Colour: #C2E2EE;
+    --std_Margin_05rem: 0.5rem;
+}
+
+* {
+    top: 0;
+    left: 0;
+}
+
+body {
+    font-family: var(--main_Font);
+    background: var(--body_Colour);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* CONTAINERS */
+
+header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: var(--std_Margin_05rem);
+}
+
+#first_Container,
+#third_Container,
+form,
+.form_Column2 {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+#second_Container {
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* COLUMN FORMATTING */
+
+header,
+[class*="header_Column"],
+#first_Container,
+[class*="first_Column"],
+#second_Container,
+[class*="second_Column"],
+#third_Container,
+[class *="third_Column"],
+footer,
+.footer_Column1,
+.footer_Column2,
+form,
+.form_Column1,
+.form_Column2 {
+    border: solid black 1px;
+    margin: var(--std_Margin_05rem);
+    border-radius: 5px;
+}
+
+.header_Column1,
+.first_Column1,
+.second_Column1,
+.third_Column1,
+.footer_Column1,
+.form_Column1,
+label {
+    grid-column: 1;
+}
+
+.header_Column2,
+.first_Column2,
+.second_Column2,
+.third_Column2,
+.footer_Column2,
+.form_Column2,
+input,
+button,
+select {
+    grid-column: 2;
+}
+
+.header_Column3 {
+    grid-column: 3;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.form_Column2 {
+    text-align: end;
+}
+
+label {
+    /* padding: 5px; */
+    margin: 5px;
+}
+
+input {
+    border: none;
+    border-bottom: solid gray 1px;
+    background-color: var(--body_Colour);
+}
+
+select {
+    margin: 5px;
+    padding: 5px;
+    background-color: var(--body_Colour);
+    border: none;
+}
+
+button {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+

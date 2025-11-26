@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Khand';
+    background-color: #C2E2EE;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 20% auto;
+}
+
+.footer_Column1 {
+    grid-column: 1;
+}
+
+form {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 20%;
+}
+
+label {
+    grid-column: 1;
+}
+
+input,
+select,
+button {
+    grid-column: 2;
+}
+
+
+
+

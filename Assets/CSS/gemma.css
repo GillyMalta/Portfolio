@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Khand';
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    gap: 11rem;
+    position: fixed;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+    transition: ease 1s;
+}
+
+a:hover {
+    font-size: 3rem;
+    transform: scale(1.05);
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    background-image: url(/Assets/Images/Gemma1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+}
+
+#main_Container {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    position: absolute;
+    top: 10rem;
+    text-align: center;
+    width: 100%;
+    z-index: 1000;
+    justify-items: center;
+}
+
+.main_Column1 {
+    grid-column: 1;
+    border: solid black 1px;
+    margin: 5px;
+    width: 50vh;
+    height: 80vh;
+    background-image: url(/Assets/Images/me_and_pillu.jpg);
+    border-radius: 10px;
+
+}
+
+.main_Column2 {
+    grid-column: 2;
+    border: solid black 1px;
+    margin: 5px;
+    width: 50vh;
+    height: 80vh;
+    background-image: url(/Assets/Images/me_and_pillu.jpg);
+}
+
+.main_Column3 {
+    grid-column: 3;
+    border: solid black 1px;
+    margin: 5px;
+    width: 50vh;
+    height: 80vh;
+    background-image: url(/Assets/Images/me_and_pillu.jpg);
+}
+

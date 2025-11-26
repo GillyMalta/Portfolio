@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+
+* {
+    top: 0;
+    left: 0;
+}
+
+:root {
+    --std_Site_Font_Khand: 'Khand';
+    --std_Header_Background_Colour_Seagreen: seagreen;
+    --std_Header_Background_Colour_C2EE2EE: #C2E2EE;
+    --std_Header_Background_Colour_Royalblue: royalblue;
+    --std_Header_Font_Colour_White: white;
+    --std_Header_Font_colour_Royalblue: royalblue;
+    --std_Header_Font_Colour_C2E2EE: #C2E2EE;
+    --std_Header_Link_Colour: white;
+    --std_Header_Font_Size: 1.5rem;
+    --std_Body_Colour_C2E2EE: #C2E2EE;
+    --std_Body_Colour_Black: black;
+    --std_Aside_Background_Colour_Royalblue: royalblue;
+    --std_Aside_Font_Colour_C2E2EE: #C2E2EE;
+    --std_Font_Colour_DC0000: #dc0000;
+    --std_Font_Colour_Seagreen: seagreen;
+    --std_Font_colour_White: white;
+    --std_Font_Colour_C2E2EE: #C2E2EE;
+    --std_Font_Colour_FF8A3d: #FF8A3D;
+    --std_Font_Size_10rem: 1rem;
+    --std_Font_Size_15rem: 1.5rem;
+    --std_Font_Size_20rem: 2rem;
+    --std_Font_Size_25rem: 2.5rem;
+    --std_Font_Size_30rem: 3rem;
+    --std_Font_Size_35rem: 3.5rem;
+    --std_Margin_Size_05rem: 0.5rem;
+    --std_Margin_Size_10rem: 1rem;
+    --std_Border_Radius_05rem: 0.5rem;
+    --std_Padding_05rem: 0.5rem;
+    --std_Padding_10rem: 1rem;
+    --std_Footer_Background_Colour_C2EE2EE: #C2E2EE;
+    --std_Footer_Background_Colour_Royalblue: royalblue;
+    --std_Footer_Font_colour_Royalblue: royalblue;
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING :root */
+
+header {
+    background-color: var(--std_Header_Background_Colour_Royalblue);
+    color: var(--std_Header_Font_colour_Royalblue);
+    font-family: var(--std_Site_Font_Khand);
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
+
+header a:hover {
+    color: var(--std_Font_Colour_FF8A3d);
+    font-size: 3rem;
+    overflow: hidden;
+}
+
+[class *="header_Column"] {
+    border: solid black 1px;
+    margin: var(--std_Margin_Size_05rem);
+    border-radius: var(--std_Border_Radius_05rem);
+    text-align: center;
+    background-color: var(--std_Header_Font_Colour_C2E2EE);
+}
+
+.header_Column1 {
+    background-image: url(/Assets/Images/Pillu.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header_Column2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.svg {
+    margin-top: 10px;
+    width: 10vh
+}
+
+.header_H2 {
+    font-size: 4vh;
+    transition: ease 0.5s;
+}
+
+.important {
+    font-size: var(--std_Font_Size_20rem);
+    font-weight: bold;
+    color: var(--std_Font_Colour_Royalblue);
+    margin: var(--std_Margin_Size_10rem);
+    transition: ease 0.5s;
+}
+
+.important:hover {
+    transform: scale(1.2);
+    letter-spacing: 0.3rem;
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING HEADER */
+
+body {
+    height: 100vh;
+    background-color: var(--std_Body_Colour_Black);
+    font-family: var(--std_Site_Font_Khand);
+    margin: 0px;
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING BODY */
+
+main {
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING MAIN */
+
+aside {
+    grid-column: 1;
+    background-color: var(--std_Aside_Background_Colour_Royalblue);
+    color: var(--std_Aside_Font_Colour_C2E2EE);
+    display: flex;
+    flex-direction: column;
+    transition: ease 0.5s;
+}
+
+aside p {
+    font-size: var(--std_Font_Size_15rem);
+    margin: 0;
+    transition: ease 0.5s;
+}
+
+aside p:hover {
+    transform: scale(1.02);
+    margin-left: var(--std_Margin_Size_10rem);
+    color: var(--std_Font_Colour_FF8A3d);
+    text-transform: uppercase;
+    font-size: var(--std_Font_Size_20rem);
+}
+
+.write_Up {
+    text-align: justify;
+    font-size:var(--std_Font_Size_10rem);
+    padding: var(--std_Padding_05rem);
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING ASIDE */
+
+#first_Container {
+    grid-column: 2;
+    background-color: var(--std_Aside_Background_Colour_Royalblue);
+    color: var(--std_Font_Colour_C2E2EE);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--std_Footer_Font_colour_Royalblue);
+}
+
+.first_Column1 {
+    background-image: url(/Assets/Images/Pillu2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.first_Column1 a {
+    text-decoration: none;
+    color: var(--std_Font_Colour_C2E2EE);
+}
+
+.first_Column2 {
+    background-image: url(/Assets/Images/Pillu3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.first_Column3 {
+    background-image: url(/Assets/Images/Pillu1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+[class *="first_Column"] {
+    border: solid black 1px;
+    margin: var(--std_Margin_Size_05rem);
+    border-radius: var(--std_Border_Radius_05rem);
+    text-align: center;
+    background-color: var(--std_Header_Font_Colour_C2E2EE);
+    color: var(--std_Font_Colour_C2E2EE);
+    transition: ease 0.5s;
+}
+
+[class*="first_Column"]:hover {
+    transform: scale(1.02);
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING FIRST CONTAINER */
+
+footer {
+    background-color: var(--std_Footer_Background_Colour_Royalblue);
+    color: var(--std_Font_Colour_C2E2EE);
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+.footer_Column_1_2 {
+    text-align: justify;
+    padding: var(--std_Padding_05rem);
+    border-left: solid white 2px;
+}
+
+.footer_Column1 {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+}
+
+.footer_Column2 {
+    grid-column: 2;
+    border-left: solid white 2px;
+    margin: var(--std_Margin_Size_05rem);
+    padding: var(--std_Padding_05rem);
+}
+
+.p_Container {
+    font-size: var(--std_Font_Size_15rem);
+    grid-column: span 2;
+}
+
+.footer_Column_1_1 {
+    padding: var(--std_Padding_10rem);
+}
+
+form {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+label {
+    grid-column: 1;
+    text-align: end;
+    padding: var(--std_Padding_05rem);
+    font-size: var(--std_Font_Size_15rem);
+}
+
+button {
+    font-size: var(--std_Font_Size_15rem);
+    transition: ease 0.5s;
+    width: fit-content;
+    justify-self: center;
+    margin-top: var(--std_Margin_Size_05rem);
+}
+
+button:hover {
+    transform: scale(1.02);
+    text-transform: uppercase;
+    color: var(--std_Font_Colour_FF8A3d);
+    font-size: var(--std_Font_Size_20rem);
+    cursor: pointer;
+}
+
+input,
+select,
+button {
+    grid-column: 2;
+    padding: var(--std_Padding_05rem);
+    background-color: var(--std_Footer_Background_Colour_Royalblue);
+    color: var(--std_Font_Colour_C2E2EE);
+    border: none;
+    font-family: var(--std_Site_Font_Khand);
+}
+
+input,
+select {
+    border-bottom: solid black 1px;
+    margin-bottom: 5px;
+}
+
+::placeholder {
+    color: var(--std_Font_Colour_C2E2EE);
+    font-family: var(--std_Site_Font_Khand);
+    font-size: var(--std_Font_Size_10rem);
+    font-style: italic;
+}
+
+select {
+    color: var(--std_Font_Colour_FF8A3d);
+    font-size: var(--std_Font_Size_15rem);
+}
+
+textarea {
+    background-color: var(--std_Aside_Background_Colour_Royalblue);
+    color: var(--std_Font_Colour_C2E2EE);
+}
+
+.required::before {
+    content: "* ";
+    color: red;
+    font-size: var(--std_Font_Size_15rem);
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING FOOTER and FORM */
+
+#disclaimer {
+    background-color: var(--std_Header_Background_Colour_Royalblue);
+    color: var(--std_Header_Font_colour_Royalblue);
+    font-family: var(--std_Site_Font_Khand);
+    margin-top: 1rem;
+    border-radius: var(--std_Border_Radius_05rem);
+    margin: var(--std_Margin_Size_05rem);
+    margin-top: var(--std_Margin_Size_10rem);
+    text-align: justify;
+}
+
+#disclaimer p {
+    color: var(--std_Font_Colour_C2E2EE);
+    font-size: var(--std_Font_Size_15rem);
+    padding: var(--std_Padding_05rem);
+}
+
+[class *="disclaimer_Column"] {
+    border: solid white 1px;
+    border-radius: var(--std_Border_Radius_05rem);
+    text-align: center;
+    background-color: var(--std_Header_Font_colour_Royalblue);
+    color: var(--std_Font_Colour_C2E2EE);
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING DISCLAIMER */
+
+header,
+aside,
+#first_Container,
+footer {
+    border: solid white 1px;
+    margin: var(--std_Margin_Size_05rem);
+    border-radius: var(--std_Border_Radius_05rem);
+    padding: var(--std_Padding_05rem);
+}
+
+.header_Column1,
+.first_Column1,
+.footer_Column_1_1 {
+    grid-column: 1;
+}
+
+.header_Column2,
+.first_Column2,
+.footer_Column_1_2 {
+    grid-column: 2;
+}
+
+.header_Column3,
+.first_Column3 {
+    grid-column: 3;
+}
+
+.header_Column4 {
+    grid-column: 4;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+/* _______________________________________________________________________________________________ */
+/* CLOSING COMMONS */
+
+@media (max-width: 576px) {
+
+    header                      {   display:  none;                     }
+
+    aside                       {   display:  none;                     }
+
+    main                        {   display: block;                     }
+
+    #first_Container > *        {   grid-column: 1 / -1;
+                                    height: 100vh;
+                                    display: grid;
+                                    grid-template-columns: 1fr;         }
+
+    footer                      {   display: none;                      }
+}
+
+@media (min-width: 1400px)      {
+
+    #first_Container            {   height: auto;                      }
+}
