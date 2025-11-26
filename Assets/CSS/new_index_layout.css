@@ -164,7 +164,7 @@ aside p:hover {
 }
 
 .first_Column1 {
-    background-image: url(/Assets/Images/Pillu2.jpg);
+    background-image: url(./Assets/Images/Pillu2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -177,14 +177,14 @@ aside p:hover {
 }
 
 .first_Column2 {
-    background-image: url(/Assets/Images/Pillu3.jpg);
+    background-image: url(./Assets/Images/Pillu3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .first_Column3 {
-    background-image: url(/Assets/Images/Pillu1.jpg);
+    background-image: url(./Assets/Images/Pillu1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
