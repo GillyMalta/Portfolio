@@ -177,7 +177,8 @@ aside p:hover {
 }
 
 .first_Column2 {
-    background-image: url(./Assets/Images/Pillu3.jpg);
+    /* background-image: url(/Assets/Images/Pillu3.jpg);     */
+    background-image: url(Assets/Images/Pillu3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
