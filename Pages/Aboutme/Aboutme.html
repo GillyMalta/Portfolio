@@ -44,7 +44,7 @@
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../Pages/Headers/Headers.html")
+  fetch("/Portfolio/Pages/Headers/Headers.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("header_Placeholder").innerHTML = data;
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../Pages/Footers/disclaimer.html")
+  fetch("/Portfolio/Pages/Footers/disclaimer.html")
     .then(response => response.text())
     .then(data => {
       document.getElementById("disclaimer_Placeholder").innerHTML = data;
