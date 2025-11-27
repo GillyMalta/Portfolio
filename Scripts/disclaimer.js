@@ -1,4 +1,4 @@
-// headers.js
+// disclaimer.js
 document.addEventListener("DOMContentLoaded", () => {
   fetch("./Pages/Footers/disclaimer.html")
     .then(response => response.text())
