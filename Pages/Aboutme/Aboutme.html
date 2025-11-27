@@ -6,46 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
-    <title>Portfolio | About Me</title>
+    <title>Portfolio | Me, myself and I</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../Assets/CSS/blog.css"> -->
-    <link rel="stylesheet" href="/Portfolio/Assets/CSS/new_index_layout.css">
+    <link rel="stylesheet" href="/Assets/CSS/aboutme.css">
 </head>
 
 <body>
 
 <div id="header_Placeholder"></div>
 
-<h1>ABOUT ME | WIP</h1>
+<div id="aboutme_Container">
+    <h2>#aboutme_CONTAINER</h2>
+
+    <div id="bullets_Container">
+        <h2>#bullets_Container</h2>
+            <a href="#">Simply Me</a>
+            <a href="#">My Family</a>
+            <a href="#">Hobbies</a>
+            <a href="#">Contact</a>
+    </div>
+
+    <div id="content">
+        <h2>#content</h2>
+    </div>
+</div>
+
+
+
+<!-- <main id="content">
+  <h1>Business Plan 2026</h1>
+</main> -->
+
 
 <div id="disclaimer_Placeholder"></div>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("/Portfolio/Pages/Headers/Headers.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("header_Placeholder").innerHTML = data;
-    })
-    .catch(error => console.error("Error loading header:", error));
-});
-</script>    
-
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("/Portfolio/Pages/Footers/disclaimer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("disclaimer_Placeholder").innerHTML = data;
-    })
-    .catch(error => console.error("Error loading header:", error));
-});
-</script>
-
-<!-- <script src="../Scripts/header.js"></script>
-<script src="../Scripts/disclaimer.js"></script> -->
+<script src="/Scripts/header.js"></script>
+<script src="/Scripts/disclaimer.js"></script>
+<script src="/Scripts/aboutme.JS"></script>
 
 </body>
 </html>
