@@ -241,6 +241,20 @@ footer {
     padding: var(--std_Padding_10rem);
 }
 
+.footer_Column_1_1 a {
+    font-size: var(--std_Font_Size_15rem);
+    margin: 0;
+    transition: ease 0.5s;
+}
+
+.footer_Column_1_1 a:hover {
+    transform: scale(1.02);
+    margin-left: var(--std_Margin_Size_10rem);
+    color: var(--std_Font_Colour_FF8A3d);
+    text-transform: uppercase;
+    font-size: var(--std_Font_Size_20rem);
+}
+
 form {
     display: grid;
     grid-template-columns: 30% auto;
