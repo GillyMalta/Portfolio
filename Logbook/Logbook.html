@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <title>Portfolio | BLOG and LOGBOOK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Assets/CSS/blog.css">
+    <link rel="stylesheet" href="../Assets/CSS/new_index_layout.css">
+</head>
+
+<body>
+
+<div id="header_Placeholder"></div>
+
+<div id="table_Container">
+    <table class="tables" border="1" cellpadding="8" cellspacing="0">
+
+        <thead>
+            <th>Date</th>
+            <th>Reference</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td class="date">26/11/25</td>
+                <td>
+                    First commit to Github repository
+                    <ul>
+                        <li>
+                            URL: <a href="https://gillymalta.github.io/Portfolio/" target="_blank">Link to site</a>
+                        </li>
+                        
+                        <li>
+                            Resolved file paths to images
+                        </li>
+                        
+                        <li>
+                            Changed filename to resolve 404 not found errors
+                        </li>
+
+                        <li>
+                            Removed @import function from CSS
+                        </li>
+                            
+                        <li>
+                            Added links for easier font loading as follows:
+                                <pre><code>
+                                    &lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;
+                                    &lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;
+                                    &lt;link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet"&gt;
+                                </code></pre>
+                        </li>
+
+                        <li>
+                            This should make font loading quicker
+                        </li>
+
+                        <li>
+                            First blog and logbook draft
+                        </li>
+
+                        <li>
+                            Added link to new_index_layout.css to blog.html
+                            <br>Confirmed the correct loading of the styling to blog.html
+                        </li>
+
+                        <li>
+                            Adjusted links to Headers JS and Disclaimer JS.
+                            <br> Both loading correctly.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="date">27/11/25</td>
+                <td>
+                    Second day:
+                        <ul>
+                            <li>
+                                Removed links to external JS (Header and Disclaimer)
+                                <br> Added inline script to external HTML
+                            </li>
+
+                            <li>
+                                Adjusted paths to SVG's in headers.html
+                                <br> Path set to Portfolio/Pages/Headers/filename.svg
+                                <br> Verified correct loading in both index and blog html files
+                            </li>
+
+                            <li>
+                                Will start working on aboutme
+                                <br> Will use same method to load header and disclaimer in the aboutme
+                                <br>This will a 3rd test to the correct SVG loading
+                            </li>
+                        </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="date">28/11/25</td>
+                <td>
+                    Third day:
+                        <ul>
+                            <li>
+                                Set the layout.
+                                <br> Header and footer still fetched from external HTML
+                                <br> All revised URLs, paths and links working correctly
+                            </li>
+
+                            <li>
+                                #aboutme_CONTAINER set with a 2-column grid 25/aboutme_Container
+                                <br>#bullets_Container set to column1 with display flex and flex direction column
+                                <br>#content set to column2 and will accept content of the &lt;a&gt; from the #bullets_Container
+                            </li>
+
+                            <li>
+                                There are 4 &lt;a&gt; links set
+                                    <ul>
+                                        <li>Simply Me</li>
+                                        <li>My Family</li>
+                                        <li>Hobbies</li>
+                                        <li>Contact Me</li>
+                                    </ul>
+                                            Each link fetches an external HTML file
+                                            <br>External URLs linked to external JS however
+                                            <br> in order to set the correct links, I had to use inline script
+                            </li>
+
+                            <li>
+                                Each external HTML will reside in it's own folder and will be linked via JS
+                            </li>
+
+                            <li>
+                                Updated index.html. Removed Pillu logo as background URL from css and
+                                    <ul>
+                                        <li>set is as &lt;img&gt; with an &lt;a&gt; link in header.html
+                                            <br>Tested link on all sub pages
+                                            <br>Link works across all sub pages
+                                        </li>
+
+                                        <li>
+                                            Added UNICODES for greetings
+                                        </li>
+
+                                    </ul>
+                            </li>
+
+                        </ul>
+                </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</div>
+
+<div id="disclaimer_Placeholder"></div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("../Pages/Headers/Headers.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header_Placeholder").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+</script>    
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("../Pages/Footers/disclaimer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("disclaimer_Placeholder").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+</script>
+
+<!-- <script src="../Scripts/header.js"></script>
+<script src="../Scripts/disclaimer.js"></script> -->
+
+</body>
+</html>
