@@ -5,13 +5,16 @@
     --std_Border_Radius_05rem: 0.5rem;
     --std_Margin_05rem: 0.5rem;
     --std_Padding_05rem: 0.5rem;
-    
 }
 
 body,
 #table_Container {
     background-color: var(--std-Body_Background_Colour_Royalblue);
     color: var(--std_Font_Colour_C2E2EE);
+}
+
+a:visited {
+    color: initial;
 }
 
 #table_Container {
