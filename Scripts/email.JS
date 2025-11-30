@@ -13,6 +13,7 @@
                 emailjs.sendForm('service_3lxe5or', 'template_etsx01k', this)
                     .then(() => {
                         console.log('SUCCESS!');
+                        document.getElementById("contact-form").innerHTML = "Thank you very much for your request. Sent!"
                     }, (error) => {
                         console.log('FAILED...', error);
                     });
