@@ -95,7 +95,7 @@ header a:hover {
 }
 
 .important:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
     /* letter-spacing: 0.3rem; */
 }
 
