@@ -218,6 +218,10 @@ footer {
     flex-direction: column;
 }
 
+.footer_Column_1_1 a {
+    text-decoration: none;
+}
+
 .footer_Column_1_2 {
     text-align: justify;
     padding: var(--std_Padding_05rem);
