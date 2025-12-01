@@ -53,14 +53,14 @@
     align-items: center;
 }
 
-.card img {
+/* .card img {
     object-fit: cover;
     width: 100%;
-}
+} */
 
 .card p span {
     min-width: 13em;
-    transform: rotate(-90deg);
+    /* transform: rotate(-90deg); */
     text-align: center;
     transition: all .5s;
 }
@@ -70,6 +70,6 @@
 }
 
 .card p:hover span {
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
 }
 
