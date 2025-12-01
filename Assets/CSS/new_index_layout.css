@@ -169,18 +169,17 @@ aside p:hover {
     object-fit: cover;
 }
 
-.first_Column1 a {
+.first_Column1 a,
+.first_Column2 a,
+.first_Column3 a {
     text-decoration: none;
     color: var(--std_Font_Colour_C2E2EE);
 }
 
-.footer_Column1 a:visited {
+.first_Column1 a:visited,
+.first_Column2 a:visited,
+.first_Column3 a:visited {
     color: initial;
-}
-
-.second_Column1 a {
-    text-decoration: none;
-    color: var(--std_Font_Colour_C2E2EE);
 }
 
 .first_Column2 {
