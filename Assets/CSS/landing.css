@@ -23,11 +23,12 @@
     margin: 0.5rem;
     border-radius: 0.5rem;
     background-color: royalblue;
-    color: yellow;
+    /* color: yellow; */
+    margin-top: 1rem;
 }
 
 .card {
-    background-color: black;
+    /* background-color: black; */
     color: white;
     height: 250px;
     /* width: 220px; */
@@ -43,7 +44,7 @@
     width: 20rem;
     flex: 1;
     overflow: hidden;
-    border-radius: 2px;
+    border-radius: 0.5rem;
     transition: all.5s;
     background-color: royalblue;
     border: solid white 1px;
