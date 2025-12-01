@@ -36,7 +36,7 @@ body {
     border: 1px solid #5ac3ff;
     display: flex;
     justify-content: center;
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 
 .card p span {
