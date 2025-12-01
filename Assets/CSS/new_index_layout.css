@@ -178,6 +178,11 @@ aside p:hover {
     color: initial;
 }
 
+.second_Column1 a {
+    text-decoration: none;
+    color: var(--std_Font_Colour_C2E2EE);
+}
+
 .first_Column2 {
     /* background-image: url(/Assets/Images/Pillu3.jpg);     */
     background-image: url('../Images/Pillu3.jpg');
