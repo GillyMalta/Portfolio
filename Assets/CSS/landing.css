@@ -1,20 +1,5 @@
-/* body {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    border: solid white 1px;
-    padding: 0.5rem;
-    margin: 0.5rem;
-    border-radius: 0.5rem;
-    background-color: royalblue;
-    color: yellow;
-} */
-
 #span_Container {
     display: flex;
-    /* width: 100%; */
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -23,15 +8,12 @@
     margin: 0.5rem;
     border-radius: 0.5rem;
     background-color: royalblue;
-    /* color: yellow; */
     margin-top: 1rem;
 }
 
 .card {
-    /* background-color: black; */
     color: white;
     height: 250px;
-    /* width: 220px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +41,6 @@
 
 .card p span {
     min-width: 13em;
-    /* transform: rotate(-90deg); */
     text-align: center;
     transition: all .5s;
 }
@@ -67,6 +48,3 @@
 .card p:hover {
     flex: 4;
 }
-
-
-
