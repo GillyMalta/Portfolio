@@ -411,7 +411,66 @@ h2 {
 /* _______________________________________________________________________________________________ */
 /* CLOSING COMMONS */
 
-@media (max-width: 576px) {
+
+/* IPhone 7 setup */
+
+/* Portrait (narrow) */
+@media (max-width: 414px) {
+
+    header                      {   display: grid;
+                                    grid-template-columns: 1                            }
+
+    .header_Column1             {   display: none;                                      }
+    .header_Column3             {   display: none;                                      }
+    .header_Column4             {   display: none;                                      }
+
+    aside                       {   display: none;                                      }
+
+    main                        {   display: block;                                     }
+
+    #first_Container > *        {   grid-column: 1 / -1;
+                                    height: 100vh;
+                                    display: grid;
+                                    grid-template-columns: 1fr;                         }
+
+    footer                      {   display: none;                                      }
+}
+
+/* Landscape (wide) */
+@media (min-width: 415px) and (max-width: 736px) {
+
+    header                      {justify-content: center;                               }
+
+    .header_Column1             {   display: none;                                      }
+
+    .header_Column2             {   width: 20rem;                                       }
+
+    .header_Column3             {   width: 20rem;                                       }
+
+    .header_Column4             {   display: none;                                      }
+
+    .important                  {   color: inherit;}
+
+    aside                       {   display: none;                                      }
+
+    main                        {   display: block;                                     }
+
+    #first_Container > *        {   grid-column: 1 / -1;
+                                    height: 100vh;
+                                    display: grid;
+                                    grid-template-columns: 1fr;                         }
+
+    footer                      {   display: none;                                      }
+}
+
+/* CLOSING I Phone 7 setup */
+/* _______________________________________________________________________________________________ */
+
+
+
+
+
+/* @media (max-width: 576px) {
 
     header                      {   display:  none;                     }
 
@@ -430,4 +489,4 @@ h2 {
 @media (min-width: 1400px)      {
 
     #first_Container            {   height: auto;                      }
-}
+} */
