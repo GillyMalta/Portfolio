@@ -417,8 +417,10 @@ h2 {
 /* Portrait (narrow) */
 @media (max-width: 414px) {
 
-    header                      {   display: grid;
-                                    grid-template-columns: 1                            }
+    /* header                      {   display: grid;
+                                    grid-template-columns: 1                            } */
+
+    header                      {justify-content: center;                               }
 
     .header_Column1             {   display: none;                                      }
     .header_Column3             {   display: none;                                      }
