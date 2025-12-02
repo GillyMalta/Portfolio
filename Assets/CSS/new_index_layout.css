@@ -424,6 +424,7 @@ h2 {
 
     .header_Column1             {   display: none;                                      }
     .header_Column3             {   display: none;                                      }
+    .header_Column2             {   width: 20rem;                                       }
     .header_Column4             {   display: none;                                      }
 
     aside                       {   display: none;                                      }
