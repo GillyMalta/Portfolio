@@ -1,0 +1,41 @@
+#logger {
+    display: grid;
+    grid-template-columns: repeat (1fr);
+    /* align-content: center;
+    text-align: center; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+label {
+    grid-column: 1;
+    color: #dc0000;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    /* height: 3rem; */
+    /* align-self: flex-start; */
+    margin-top: 2rem;
+    text-align: right;
+}
+
+input {
+    grid-column: 2;
+    background-color: #e5edff;
+    border: none;
+    border-bottom: solid black 0.5px;
+    /* height: 3rem; */
+    width: 90%;
+    margin-top: 2rem;
+}
+
+input::placeholder {
+    font-style: italic;
+}
+
+#send_It {
+    grid-column: 2;
+    height: 2rem;
+    width: 91%;
+    border: none;
+    margin: 1rem 0 0 0;
+}
+

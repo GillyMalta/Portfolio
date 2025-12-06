@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Assets/CSS/Main.CSS">
+    <link rel="stylesheet" href="/Assets/CSS/tester.CSS">
+   
+    <title>ATM Simulator</title>
+</head>
+
+<body>
+    <header>
+        <div id="header_Placeholder"></div>
+    </header>
+
+<h1>ATM Simulator</h1>
+
+<div id="orientation">
+    <br>
+    <h2>This device or the screen orientation not supported!</h2>
+</div>
+
+<main>
+
+    <section id="main_Body">
+        <div class="column1">
+            <button id="login" onclick="logbackin()">Login</button>
+            <br>
+            <button id="balance">Balance</button>
+            <br>
+            <button id="withdraw">Withdraw</button>
+            <br>
+            <button id="deposit">Deposit</button>
+            <br>
+            <button id="logout">Logout</button>
+        </div> <!-- closing ID main_Body-->
+
+        <div class="column2">
+            <img id="logo" src="/Assets/Images/LPPP_Bank_Logo_new_2.jpg" title="Logo">
+                <hr>
+            <div id="display_Area">
+
+                <div id="logger">
+                    <label for="name">Username:</label>
+                    <input id="username" type="text" name="name" placeholder="Enter your username">
+
+                    <label>Password:</label>
+                    <input id="password" type="text" name="password" placeholder="Enter your password">
+
+                    <button id="send_It" onclick="login()">Send It!</button>
+                </div>
+
+
+                <!-- <p>Welcome to the Lippu Pillu Pullu Pluppu Bank Mobile App</p>
+                    <br>
+                <p>Please use the button on the left to navigate</p>
+                    <br>
+                <p>Function buttons are <strong>DISABLED</strong> until you login!!</p>
+                    <br>
+                <p>You <strong>HAVE</strong> to login first!</p>
+            </div> -->
+        </div>
+    </section>
+
+    <div id="tester">
+    </div>
+
+<hr>
+
+<footer>
+    <div id="footer_Container">
+
+        <div id="footer_Column1">
+            <p>Footer Column 1</p>
+                <p>Current user:</p>
+                <div id="current_User">
+                </div>
+        </div>
+
+        <div id="footer_Column2">
+            <p>Footer Column 2</p>
+        </div>
+
+        <div id="footer_Column3">
+            <p>Footer Column 3</p>
+        </div>
+
+        <div id="footer_Column4">
+            <p>Footer Column 4</p>
+        </div>
+
+    </div>
+
+</footer>
+
+<hr>
+
+<div class="copyright">
+    &copy Gilbert Sammut | 2025
+</div>
+
+<script src="/Scripts/login_test.JS"></script>
+</body>
+</html>
