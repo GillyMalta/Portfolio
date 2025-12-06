@@ -7,7 +7,7 @@ let balances = [];
 let currentbalance = null;
 
 function login() {
-    fetch('/Portfolio/Pages/ATM/Assets/JSON/login.json')
+    fetch('Portfolio/Pages/ATM/Assets/JSON/login.json')
         .then(response => response.json())
         .then(data => {
             const loginArray = [];
